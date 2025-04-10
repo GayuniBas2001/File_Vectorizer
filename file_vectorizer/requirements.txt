@@ -1,0 +1,9 @@
+psycopg2-binary
+python-docx 
+PyMuPDF 
+pandas 
+tiktoken 
+sentence-transformers 
+langchain 
+python-dotenv
+git+https://github.com/GayuniBas2001/SOMPY.git 
