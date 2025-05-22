@@ -121,8 +121,9 @@ if __name__ == '__main__':
         b64_content = base64.b64encode(f.read()).decode('utf-8')
     raw_text = read_pdf(b64_content)
     cleaned = clean_text(raw_text)
+    # print(cleaned[:1000])  # Print first 1000 characters for debugging
     chunks = chunk_text(cleaned)
-
+    # print(chunks[:3])  # Print first 3 chunks for debugging
     embeddings = embed_text_chunks(chunks)
     print("Embeddings shape:", embeddings.shape)
     store_embeddings(embeddings, chunks)
